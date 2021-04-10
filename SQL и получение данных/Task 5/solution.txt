@@ -1,0 +1,14 @@
+use db_test;
+
+db.createCollection("users")
+
+db.users.insert(
+    {
+      name: { first: "Alan", last: "Turing" },
+      contact: { phone: { type: "cell", number: "111-222-3333" } },
+    },
+    {
+      name: { first: "Alan2", last: "Turing2" },
+      contact: { phone: { type: "cell", number: "111-222-3333" } },
+    }
+)
